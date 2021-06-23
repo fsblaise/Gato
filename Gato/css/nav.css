@@ -1,0 +1,127 @@
+/*NAVBAR*/
+#navbar{
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 20;
+    width: 100%;
+    text-align: center;
+    background: #333333;
+    transition: 0.5s;
+    padding: 10px 0 10px 0; /*É K D NY*/
+}
+
+#GATO{
+    padding-left: 25px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+#GATO:hover{
+    background: #444444;
+}
+
+#menu{
+    display: none;
+}
+
+.gombok {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline;
+    font-size: 18px;
+    color: antiquewhite;
+    text-align: center;
+    vertical-align: middle;
+}
+.gombok:hover{
+    background: #444444;
+}
+
+.legordulogomb{
+    background: transparent;
+    font-size: 30px;
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    color: antiquewhite;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+}
+
+.legordulogomb:hover{
+    background: #444444;
+}
+
+.menugombok{
+    display: none;
+    float: bottom;
+    list-style-type: none;
+    font-size: 18px;
+    background: #333333;
+    z-index: 50;
+    text-align: center;
+    vertical-align: middle;
+    color: antiquewhite;
+}
+
+.menugombok a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menugombok a:hover{
+    background: #444444;
+}
+
+#menu:hover .menugombok{
+    display: block;
+    float: bottom;
+}
+
+
+/*MEDIA QUERY & LEGÖRDÜLŐ MENÜ*/
+
+@media screen and (max-width: 800px){
+    #GATO{
+        display: none;
+    }
+    .gombok{
+        display: none;
+    }
+    #menu{
+        float: left;
+        display: inline;
+        text-align: center;
+        vertical-align: middle;
+        color: antiquewhite;
+    }
+}
+
+
+
+/*A TAGEK, FOOTER*/
+a{text-decoration: none}
+
+a:link {color: antiquewhite}
+a:visited {color: navajowhite}
+a:hover {color: floralwhite}
+a:active {color: darkgray}
+
+footer{
+    left: 0;
+    width: 100%;
+    white-space: pre-wrap;
+    background: white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    position: relative;
+    bottom: 0;
+}

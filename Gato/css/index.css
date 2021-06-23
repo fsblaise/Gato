@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Candara, serif;
+}
+
+main{
+    background-image: url("../img/catto.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background: dodgerblue;
+    width: 100%;
+    font-size: 18px;
+    color: papayawhip;
+    text-align: center;
+    vertical-align: middle;
+    transition: 2s;
+}
+
+.udvozlo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.udvozlo h1{
+    text-shadow: 3px 3px #333333;
+    display: inline;
+    background-color: rgba(169, 169, 169, 0.9);
+    border-radius: 10px;
+    margin: 2em auto 2em auto;
+    padding: 15px;
+    color: navajowhite;
+    text-align: center;
+}
+
+#fooldalcica{
+    border-radius: 30px;
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px -5px 5px 0 #333333;
+}
+
+.info{
+    border: solid #333333 2px;
+    display: block;
+    text-align: center;
+    margin: 2em auto 2em auto;
+    background: navajowhite;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.info p{
+    font-weight: 900;
+    font-size: medium;
+    line-height: 2em;
+}
+
+.info div p ~ p{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+/*GRID szekció*/
+
+.tarolo {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 10px 5px 10px 5px;
+}
+
+.tarolo ~ .tarolo{ /*mindent kijelöl, kivéve az elsőt*/
+    margin-top: 0;
+    grid-template-columns: 50% 50%;
+}
+
+.oszlop{
+    background-color: rgba(169, 169, 169, 0.9);
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0 5px 0 5px;
+}
+
+.grid-pic {
+    display: block;
+    padding: 20px 50px 20px 50px;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.grid-pic img{
+    border-radius: 20px;
+}
+
+.grid-text {
+    display: block;
+    border: 0 solid rgba(0, 0, 0, 0.5);
+    padding: 20px 50px 20px 50px;
+    font-size: 30px;
+    text-align: center;
+    height: 2em;
+}
+
+@media screen and (max-width: 1800px){
+    .grid-text{
+        height: 3em;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .grid-text{
+        height: 4em;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .grid-text{
+        height: 5em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .tarolo ~ .tarolo{
+        grid-template-columns: 100%;
+    }
+    .grid-text{
+        height: 2em;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .grid-text{
+        height: 3em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .grid-text{
+        height: 4em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grid-text{
+        height: 5em;
+    }
+}
+
+#neuralpic{
+    width: 90%;
+    height: 90%;
+}
+
+#anatomypic{
+    width: 90%;
+    height: 90%;
+}
+
+#cpupic{
+    width: 90%;
+    height: 90%;
+}
+
+#chonkpic{
+    width: 90%;
+    height: 90%;
+}

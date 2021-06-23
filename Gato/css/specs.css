@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Candara, serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background: #557085;
+}
+
+#cim{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#foszoveg{
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    border: 20px;
+    text-shadow: 3px 3px #333333;
+    display: inline;
+    background-color: rgba(169, 169, 169, 0.9);
+    border-radius: 10px;
+    margin: 2em auto 2em auto;
+    padding: 15px;
+    color: navajowhite;
+    text-align: center;
+}
+
+.specsgrid{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 20px 10px 20px 10px;
+}
+
+.tarolo{
+    display: grid;
+    margin-top: 0;
+    grid-template-columns: 25% 75%;
+}
+
+.kep {
+    display: block;
+    padding: 20px 0 20px 50px;
+}
+
+.tablazat{
+    display: block;
+    padding: 20px 50px 20px 0;
+}
+
+.tablazat table{
+    width: 100%;
+}
+
+.tablazat tr{
+    height: 4em;
+}
+
+.tablazat td:nth-child(odd){
+    background: rgba(210, 210, 210, 0.9);
+    width: 30%;
+}
+
+.tablazat td:nth-child(even){
+    background: rgba(169, 169, 169, 0.9);
+    width: 70%;
+}
+
+.tablazat th:nth-child(even){
+    background: rgba(169, 169, 169, 0.9);
+    width: 70%;
+}
+
+.tablazat th:nth-child(odd){
+    background: rgba(169, 169, 169, 0.9);
+    width: 30%;
+}
+
+@media screen and (max-width: 1400px) {
+    .tarolo{
+        grid-template-columns: 100%;
+    }
+
+    .kep{
+        display: block;
+        margin-bottom: 0;
+        width: 40%;
+        height: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tablazat{
+        height: 100%;
+        top:0;
+        width: 100%;
+    }
+}
